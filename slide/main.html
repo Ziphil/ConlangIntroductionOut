@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">//
+    
+    
+    let index = 0;
+    
+    function prepare() {
+      let size = document.querySelectorAll("*[class$='slide']").length;
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft" || event.key === "ArrowUp" || event.key === "Backspace") {
+          if (index > 0) {
+            index --;
+          }
+          scroll();
+        } else if (event.key === "ArrowRight" || event.key === "ArrowDown" || event.key === "Enter" || event.key === " ") {
+          if (index < size - 1) {
+            index ++;
+          }
+          scroll();
+        }
+      });
+    }
+    
+    function scroll() {
+      document.querySelectorAll("*[class$='slide']")[index].scrollIntoView();
+      console.log("Page: " + index);
+    }
+    
+    window.onload = prepare;</script>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <title>LT H3550</title>
+  </head>
+  <body>
+
+    <div class="slide" id="page-1"><div class="container">
+      <div class="content">
+        <div class="block huge blue">人工言語</div>
+        <div class="block" range="2-" style="visibility: hidden;">
+          まさに今話しているような言語を作る創作ジャンル
+        </div>
+        <div class="list" range="3-" style="visibility: hidden;">
+          <div class="list-item">文法の制定<span class="separator"></span>発音は? 語順は? 修飾の仕方は?</div>
+          <div class="list-item">語彙の作成<span class="separator"></span>「リンゴ」って何て言うの?</div>
+          <div class="list-item">文章の翻訳/執筆</div>
+        </div>
+      </div>
+    <div class="number">1</div></div></div><div class="slide" id="page-2"><div class="container">
+      <div class="content">
+        <div class="block huge blue">人工言語</div>
+        <div class="block" range="2-">
+          まさに今話しているような言語を作る創作ジャンル
+        </div>
+        <div class="list" range="3-" style="visibility: hidden;">
+          <div class="list-item">文法の制定<span class="separator"></span>発音は? 語順は? 修飾の仕方は?</div>
+          <div class="list-item">語彙の作成<span class="separator"></span>「リンゴ」って何て言うの?</div>
+          <div class="list-item">文章の翻訳/執筆</div>
+        </div>
+      </div>
+    <div class="number">2</div></div></div><div class="slide" id="page-3"><div class="container">
+      <div class="content">
+        <div class="block huge blue">人工言語</div>
+        <div class="block" range="2-">
+          まさに今話しているような言語を作る創作ジャンル
+        </div>
+        <div class="list" range="3-">
+          <div class="list-item">文法の制定<span class="separator"></span>発音は? 語順は? 修飾の仕方は?</div>
+          <div class="list-item">語彙の作成<span class="separator"></span>「リンゴ」って何て言うの?</div>
+          <div class="list-item">文章の翻訳/執筆</div>
+        </div>
+      </div>
+    <div class="number">3</div></div></div>
+  
+    <div class="slide" id="page-4"><div class="container">
+      <div class="content">
+        <div class="description">
+          <div class="description-term huge blue">国際補助語</div>
+          <div class="description-explanation line-height">
+            共通の母語をもたない人々の間での意思伝達
+          </div>
+        </div>
+        <div class="description" range="2-" style="visibility: hidden;">
+          <div class="description-term huge blue">架空言語/芸術言語</div>
+          <div class="description-explanation line-height">
+            架空の世界で話されている言語として<br>
+            単に芸術の一種として
+          </div>
+        </div>
+      </div>
+    <div class="number">4</div></div></div><div class="slide" id="page-5"><div class="container">
+      <div class="content">
+        <div class="description">
+          <div class="description-term huge blue">国際補助語</div>
+          <div class="description-explanation line-height">
+            共通の母語をもたない人々の間での意思伝達
+          </div>
+        </div>
+        <div class="description" range="2-">
+          <div class="description-term huge blue">架空言語/芸術言語</div>
+          <div class="description-explanation line-height">
+            架空の世界で話されている言語として<br>
+            単に芸術の一種として
+          </div>
+        </div>
+      </div>
+    <div class="number">5</div></div></div>
+  
+    <div class="slide" id="page-6"><div class="container">
+      <div class="content">
+        <div class="block huge blue">エスペラント</div>
+        <div class="list" range="2-" style="visibility: hidden;">
+          <div class="list-item">ルドヴィコ・ザメンホフ 創案</div>
+          <div class="list-item">国際補助語</div>
+          <div class="list-item">話者 100 万人 (推定)</div>
+        </div>
+        <div class="list" range="3-" style="visibility: hidden;">
+          <div class="list-item">語尾で品詞が分かる</div>
+          <div class="list-item">接辞を付けて意味を派生させていく</div>
+        </div>
+        <div id="zamenhof" range="2-" style="visibility: hidden;">
+          <img src="../asset/zamenhof.jpg">
+        </div>
+      </div>
+    <div class="number">6</div></div></div><div class="slide" id="page-7"><div class="container">
+      <div class="content">
+        <div class="block huge blue">エスペラント</div>
+        <div class="list" range="2-">
+          <div class="list-item">ルドヴィコ・ザメンホフ 創案</div>
+          <div class="list-item">国際補助語</div>
+          <div class="list-item">話者 100 万人 (推定)</div>
+        </div>
+        <div class="list" range="3-" style="visibility: hidden;">
+          <div class="list-item">語尾で品詞が分かる</div>
+          <div class="list-item">接辞を付けて意味を派生させていく</div>
+        </div>
+        <div id="zamenhof" range="2-">
+          <img src="../asset/zamenhof.jpg">
+        </div>
+      </div>
+    <div class="number">7</div></div></div><div class="slide" id="page-8"><div class="container">
+      <div class="content">
+        <div class="block huge blue">エスペラント</div>
+        <div class="list" range="2-">
+          <div class="list-item">ルドヴィコ・ザメンホフ 創案</div>
+          <div class="list-item">国際補助語</div>
+          <div class="list-item">話者 100 万人 (推定)</div>
+        </div>
+        <div class="list" range="3-">
+          <div class="list-item">語尾で品詞が分かる</div>
+          <div class="list-item">接辞を付けて意味を派生させていく</div>
+        </div>
+        <div id="zamenhof" range="2-">
+          <img src="../asset/zamenhof.jpg">
+        </div>
+      </div>
+    <div class="number">8</div></div></div>
+  
+    <div class="slide" id="page-9"><div class="container">
+      <div class="content">
+        <div class="block huge blue">ソルレソル</div>
+        <div class="block" range="2-" style="visibility: hidden;">
+          この言語の特徴は?
+        </div>
+        <div class="list no-marker" range="2-3" style="visibility: hidden;">
+          <div class="list-item"><span class="choice">A</span>文法構造を機械で正確にパースできる</div>
+          <div class="list-item"><span class="choice">B</span>表記に分数やルートなどの数学記号を用いる</div>
+          <div class="list-item correct"><span class="choice">C</span>口笛や楽器の音階の変化を単語として使う</div>
+          <div class="list-item"><span class="choice">D</span>人間以外の動物が使うことを目的としている</div>
+        </div>
+      </div>
+    <div class="number">9</div></div></div><div class="slide" id="page-10"><div class="container">
+      <div class="content">
+        <div class="block huge blue">ソルレソル</div>
+        <div class="block" range="2-">
+          この言語の特徴は?
+        </div>
+        <div class="list no-marker" range="2-3">
+          <div class="list-item"><span class="choice">A</span>文法構造を機械で正確にパースできる</div>
+          <div class="list-item"><span class="choice">B</span>表記に分数やルートなどの数学記号を用いる</div>
+          <div class="list-item correct"><span class="choice">C</span>口笛や楽器の音階の変化を単語として使う</div>
+          <div class="list-item"><span class="choice">D</span>人間以外の動物が使うことを目的としている</div>
+        </div>
+      </div>
+    <div class="number">10</div></div></div><div class="slide" id="page-11"><div class="container">
+      <div class="content">
+        <div class="block huge blue">ソルレソル</div>
+        <div class="block" range="2-">
+          この言語の特徴は?
+        </div>
+        <div class="list no-marker" range="2-3">
+          <div class="list-item"><span class="choice">A</span>文法構造を機械で正確にパースできる</div>
+          <div class="list-item"><span class="choice">B</span>表記に分数やルートなどの数学記号を用いる</div>
+          <div class="list-item correct"><span class="choice">C</span>口笛や楽器の音階の変化を単語として使う</div>
+          <div class="list-item"><span class="choice">D</span>人間以外の動物が使うことを目的としている</div>
+        </div>
+      </div>
+    <div class="number">11</div></div></div>
+  
+    <div class="slide" id="page-12"><div class="container">
+      <div class="content">
+        <div class="gather">
+          <div class="description">
+            <div class="description-term"><span class="choice">A</span>文法構造を機械で正確にパースできる</div>
+            <div class="description-explanation small blue"><span class="arrow first"></span>ロジバン (Lojban)</div>
+          </div>
+          <div class="description">
+            <div class="description-term"><span class="choice">B</span>表記に分数やルートなどの数学記号を用いる</div>
+            <div class="description-explanation small blue"><span class="arrow first"></span>超越代数 (Transcendental Algebra)</div>
+          </div>
+          <div class="description">
+            <div class="description-term"><span class="choice">C</span>口笛や楽器の音階の変化を単語として使う</div>
+            <div class="description-explanation small blue"><span class="arrow first"></span>ソルレソル (Solresol)</div>
+          </div>
+          <div class="description">
+            <div class="description-term"><span class="choice">D</span>人間以外の動物の意思疎通を目的としている</div>
+            <div class="description-explanation small blue"><span class="arrow first"></span>ヤーキッシュ (Yerkish)</div>
+          </div>
+        </div>
+      </div>
+    <div class="number">12</div></div></div>
+  
+    <div class="slide" id="page-13"><div class="container">
+      <div class="content">
+        <div class="block huge blue">シャレイア語</div>
+        <div class="block line-height">
+          うちの子 (9 歳)
+        </div>
+        <div class="block line-height">
+          自分の価値観を基に単語を作成<br>
+          <span class="arrow first"></span>自己表現の一種として
+        </div>
+        <div class="shaleian-box small line-height" range="2-" style="visibility: hidden;">
+          e ʻalis, pôzac ovel ebam zi&apos;n déqat a&apos;s ca zehrisis vo fîc ica hinof, lo kavat a&apos;s e dat dozat lesas e a&apos;s.
+          zesqikas a ces la tal al&apos;atis é al&apos;aqec e xoq lîdac e a hinof, dà dukavat a cit e qinat o lek.
+          lo, revas a ces.
+          «pa salot e pil a sokus i xoq ide qinat o lek?»
+        </div>
+      </div>
+    <div class="number">13</div></div></div><div class="slide" id="page-14"><div class="container">
+      <div class="content">
+        <div class="block huge blue">シャレイア語</div>
+        <div class="block line-height">
+          うちの子 (9 歳)
+        </div>
+        <div class="block line-height">
+          自分の価値観を基に単語を作成<br>
+          <span class="arrow first"></span>自己表現の一種として
+        </div>
+        <div class="shaleian-box small line-height" range="2-">
+          e ʻalis, pôzac ovel ebam zi&apos;n déqat a&apos;s ca zehrisis vo fîc ica hinof, lo kavat a&apos;s e dat dozat lesas e a&apos;s.
+          zesqikas a ces la tal al&apos;atis é al&apos;aqec e xoq lîdac e a hinof, dà dukavat a cit e qinat o lek.
+          lo, revas a ces.
+          «pa salot e pil a sokus i xoq ide qinat o lek?»
+        </div>
+      </div>
+    <div class="number">14</div></div></div>
+  
+    <div class="slide" id="page-15"><div class="container">
+      <div class="content">
+        <div class="block huge blue">シャレイア語</div>
+        <div class="block line-height">
+          うちの子 (9 歳)
+        </div>
+        <div class="block line-height">
+          自分の価値観を基に単語を作成<br>
+          <span class="arrow first"></span>自己表現の一種として
+        </div>
+        <div class="shaleian-box gilit small line-height">
+          e ʻaLiS, pÔzAc OvEl EbAm zI&apos;n dÉqAt A&apos;s Ca ZeHrIsIs Vo FîC iCa HiNOf, Lo KaVaT a&apos;S e DaT dOzAt LeSaS e A&apos;s.
+          ZeSqIkAs A cEs La TaL aL&apos;aTiS é Al&apos;AqEc E xoQ lÎdAc E a HiNOf, Dà DuKaVaT a CiT e QiNAt O lEk.
+          Lo, ReVaS a CeS.
+          pA sAlOt E pIl A sOkUs I xoQ iDe QiNAt O lEk?
+        </div>
+      </div>
+    <div class="number">15</div></div></div>
+  
+    <div class="slide" id="page-16"><div class="container">
+      <div class="content">
+        <div class="block">
+          本を出したりもした
+        </div>
+        <div class="gather">
+          <div class="block">Amazon で買えます</div>
+          <div class="block tiny">amazon.co.jp/dp/B07KGYPSS3</div>
+        </div>
+        <div id="book">
+          <img src="../asset/book.png">
+        </div>
+      </div>
+    <div class="number">16</div></div></div>
+  
+    <div class="slide" id="page-17"><div class="container">
+      <div class="content">
+        <div class="block center line-height phrase shaleian">
+          ri xokasis a loc avéf e qiloxxakoc<br>
+          qi qerit ie laz i tel<br>
+          haris a cal e tel 
+        </div>
+        <div class="block center line-height phrase">
+          今日の話を聞いて<br>
+          人工言語に興味をもってもらえたら嬉しいです
+        </div>
+      </div>
+    <div class="number">17</div></div></div>
+ 
+  </body>
+</html>

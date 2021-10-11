@@ -1,0 +1,260 @@
+@charset "UTF-8";
+div.slide {
+  width: 177.7777777778vh;
+  height: 100vh;
+  margin: 0px auto;
+  padding: 0px;
+  background: url("../asset/background.svg"), white;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+div.slide .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+div.slide .content {
+  --text-color: #333333;
+  --light-text-color: rgba(51, 51, 51, 0.5);
+  --border-color: #333333;
+  padding: 8vh 35vh;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+div.slide .number {
+  width: 10vh;
+  top: 2vh;
+  right: 3vh;
+  font-family: "Showcard Gothic";
+  font-size: 8vh;
+  color: white;
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: absolute;
+}
+
+div.slide .list {
+  margin: 0vh;
+  padding: 0vh;
+  list-style-type: none;
+}
+
+div.slide .list:not(.no-marker) > .list-item {
+  margin-left: 1.1em;
+  text-align: justify;
+}
+
+div.slide .list:not(.no-marker) > .list-item::before {
+  width: 0.8em;
+  margin-right: 0.3em;
+  margin-left: -1.1em;
+  color: var(--light-text-color);
+  content: "⮞";
+  display: inline-block;
+}
+
+div.slide .list-item {
+  margin-top: 3vh;
+}
+
+div.slide .list-item:first-child {
+  margin-top: 0vh;
+}
+
+div.slide .description-term {
+  margin-bottom: 3vh;
+}
+
+div.slide .description-explanation {
+  margin-left: 5vh;
+}
+
+div.slide .gather > * {
+  margin-top: 5vh;
+}
+
+div.slide .gather > *:first-child {
+  margin-top: 0vh;
+}
+
+div.slide .separator {
+  margin: 0em 0.3em;
+  color: var(--light-text-color);
+}
+
+div.slide .separator::before {
+  content: "―";
+}
+
+div.slide .arrow {
+  margin: 0em 0.3em;
+  color: var(--light-text-color);
+}
+
+div.slide .arrow::before {
+  content: "➡";
+}
+
+div.slide .arrow.first {
+  margin-left: 0em;
+}
+
+div.slide .large {
+  font-size: 120%;
+}
+
+div.slide .huge {
+  font-size: 150%;
+}
+
+div.slide .small {
+  font-size: 80%;
+}
+
+div.slide .tiny {
+  font-size: 60%;
+}
+
+div.slide .blue {
+  --text-color: #00b3ff;
+  --light-text-color: rgba(0, 179, 255, 0.5);
+  --border-color: #33c2ff;
+  color: var(--text-color);
+}
+
+div.slide .orange {
+  --text-color: #ff9500;
+  --light-text-color: rgba(255, 149, 0, 0.5);
+  --border-color: #ffaa33;
+  color: var(--text-color);
+}
+
+div.slide .japanese {
+  font-family: "源ノ角ゴシック";
+  line-height: 0;
+}
+
+div.slide .center {
+  text-align: center;
+}
+
+div.slide .line-height {
+  line-height: 1.5;
+}
+
+div.slide .line-height::before {
+  width: 0u;
+  height: 0u;
+  margin-top: -0.25em;
+  display: block;
+  content: "";
+}
+
+div.slide .line-height::after {
+  width: 0u;
+  height: 0u;
+  margin-bottom: -0.25em;
+  display: block;
+  content: "";
+}
+
+div.slide .choice {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.3em;
+  color: white;
+  line-height: normal;
+  letter-spacing: normal;
+  border-radius: 50%;
+  background-color: var(--light-text-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.slide #zamenhof {
+  top: 23vh;
+  right: 35vh;
+  position: absolute;
+}
+
+div.slide #zamenhof > img {
+  width: 30vh;
+}
+
+div.slide #book {
+  top: 20vh;
+  bottom: 20vh;
+  right: 35vh;
+  position: absolute;
+}
+
+div.slide #book > img {
+  height: 100%;
+}
+
+div#page-11.slide .list-item.correct {
+  --text-color: #ff9500;
+  --light-text-color: rgba(255, 149, 0, 0.5);
+  --border-color: #ffaa33;
+  color: var(--text-color);
+}
+
+div.slide .shaleian-box {
+  height: 32vh;
+  padding: 0vh 4vh;
+  font-family: "Vekos Web";
+  text-align: justify;
+  letter-spacing: normal;
+  border: 0.5vh #33c2ff solid;
+  border-radius: 3vh;
+  display: flex;
+  align-items: center;
+}
+
+div.slide .shaleian-box.gilit {
+  font-family: "Gilit Web";
+  font-size: 85%;
+  text-align: center;
+}
+
+div.slide .shaleian {
+  font-family: "Vekos Web";
+}
+
+div.slide .phrase {
+  transform: skew(-5deg, 0deg);
+}
+
+@font-face {
+  font-family: "Vekos Web";
+  src: url("../asset/vekos.ttf");
+}
+
+@font-face {
+  font-family: "Gilit Web";
+  src: url("../asset/gilit.ttf");
+}
+
+html {
+  font-size: 4.5vh;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "PT Sans", "源ノ角ゴシック";
+  font-feature-settings: "palt" 1, "pkna" 1;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  background-color: black;
+  overflow: hidden;
+}
